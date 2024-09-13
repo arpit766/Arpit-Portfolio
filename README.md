@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Arpit-Portfolio 
 <!-- I have experience in developing systems, interfaces, bots, and technological solutions to make the web a better place. I am dedicated to writing and refactoring clean, reusable, and scalable code in `Angular, React, NodeJS and ExpressJS and sometimes in Python` applying good practices and development standards. -->
 
@@ -5,6 +6,17 @@
 
 Click the link below to open my portfolio.
 <https://mufeez1.github.io/muffeez/> 
+=======
+# Arpit-Portfolio
+
+<!-- I have experience in developing systems, interfaces, bots, and technological solutions to make the web a better place. I am dedicated to writing and refactoring clean, reusable, and scalable code in `Angular, React, NodeJS and ExpressJS and sometimes in Python` applying good practices and development standards. -->
+
+I have 1 year 6 months of experience in developing Frontend, Interfaces, and Technological solutions to make the web a better place. I am dedicated to writing and refactoring clean, reusable, and scalable code in `Angular and also Node, Postgres DB` applying good practices and development standards.
+
+## Live Demo
+
+You can view the live demo of this project [here](https://arpit766.github.io/Arpit-Portfolio/).
+>>>>>>> 63ca114b20409f3ef965557c7372c9a40112c98d
 
 ## Development server
 
