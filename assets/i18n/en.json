@@ -4,22 +4,34 @@
     "Header.Item3": "Projects",
     "Header.Item4": "Contact",
     "Header.cvBtn": "Resume",
-    "Header.cvName": "Arpit.pdf",
+    "Header.cvName": "Arpit_kumar_resume_.pdf",
     "Banner.Pretitle": "Hello! My Name is",
-    "Banner.Description": "I have <span class='underline'>1 year and 6 months of experience </span> in developing systems, interfaces, bots, and technological solutions to make the web a better place. I am dedicated to writing and refactoring clean, reusable, and scalable code in <span class='underline'>Angular, NodeJS, ExpressJS and Postgres DB</span> and sometimes in applying good practices and development standards.",
+    "Banner.Description": "I have <span class='underline'>2+ years of experience </span> in developing systems, interfaces, bots, and technological solutions to make the web a better place. I am dedicated to writing and refactoring clean, reusable, and scalable code in <span class='underline'>Angular, NodeJS, ExpressJS and SQL</span> and sometimes in applying good practices and development standards.",
    "Banner.ActionBtn": "Mail: arpitkmar302@gmail.com",
     "AboutMe.Title": "About me",
     "AboutMe.Paragraphs": [
-        "In my <span class='underline'>1 year and 6 months of experience </span> as a developer</span>, I seek to train every day. I have worked writing <span class='underline'>clean and responsive codes</span>, <span class='underline'>performing continuous integration</span>, and covering backend developer roles with <span class='underline'>Node.js and Postgres</span>. I have led teams having empathy, exercising motivation to partners, and setting plans and goals together.",
+        "In my <span class='underline'>2+ years of experience </span> as a developer</span>, I seek to train every day. I have worked writing <span class='underline'>clean and responsive codes</span>, <span class='underline'>performing continuous integration</span>, and covering backend developer roles with <span class='underline'>Node.js and SQL</span>. I have led teams having empathy, exercising motivation to partners, and setting plans and goals together.",
         "My skills also include implementing system improvements, optimizing sites, standardizing patterns, and suggesting and executing ideas that add value to the project I'm working on.",
         "Some of the technologies that I have trained and worked on include (but are not limited to):"
     ],
     "Experience.Title": "Experience",
-    "Experience.Jobs": [
+    "Experience.Jobs": [    {
+      "Tab": "InsuranceDekho",
+      "Title": "Software Development Engineer 1",
+      "Date": "Mar 2024 - Present",
+      "Description": [
+        "Integrated ICICI Elevate and Care Ultimate health insurance plans into the quote and proposal engine, ensuring complete compliance with underwriting logic and business rules.",
+        "Engineered the proposal generation and premium breakdown modules with dynamic add-on handling, which supported more than 20 complex add-on combinations and improved modularity.",
+        "Built region-wise underwriting rules (Delhi NCR, Gautam Buddha Nagar, etc.) involving mandatory addons, zone-based exclusions, and max-age filters, reducing manual errors by 80%.",
+        "Revamped the bucketing and sorting logic in quote APIs to dynamically prioritize insurers and plans based on backend configurations, improving user quote relevance.",
+        "Optimized addon eligibility mapping using MongoDB aggregation and indexing, resulting in a 35% speed improvement for quote generation.",
+        "Collaborated across product and QA teams to finalize premium payload design, covering sum insured limits, CIBIL discounts, business types, and tenure validation."
+      ]
+    },
         {
             "Tab": "Akal Infosys",
             "Title": "Fullstack Developer",
-            "Date": "July 2023 - Present",
+            "Date": "July 2023 - Jan-2024",
           "Description": [
     "Spearheaded the frontend development efforts for the TankhaPay project using Angular, resulting in user-friendly and responsive interfaces that significantly improved the application's overall user experience.",
     "Integrated frontend components, optimizing performance and maintainability, and directly contributed to the successful securing of <span class='underline'>$2.7 million</span> in funding from Japanese investors.",
@@ -33,7 +45,27 @@
     ],
     "FeatureProjects.Title": "Projects",
     "FeatureProjects.Label": "Featured Project",
-    "FeatureProjects.Projects": [
+    "FeatureProjects.Projects": [    {
+      "Title": "InsuranceDekho",
+      "Description": "At InsuranceDekho, I contributed to the integration of ICICI Elevate and Care Ultimate health plans in the B2C journey. I implemented underwriting logic with pincode, age, and zone filters, handled complex addon combinations, and dynamically generated premium payloads. This improved quote accuracy and plan eligibility filtering across the platform. <a href='https://www.insurancedekho.com' target='_blank'><i class='ml-3 fas fa-external-link-alt'></i>&nbsp; Visit InsuranceDekho</a>",
+      "imgs": [
+        "assets/images/ID_1.png",
+        "assets/images/ID_2.png",
+        "assets/images/ID_3.png",
+        "assets/images/ID_4.png",
+        "assets/images/ID_5.png",
+        "assets/images/ID_6.png"
+      ],
+      "Technologies": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "SQL",
+        "TypeScript",
+        "JavaScript",
+        "REST APIs"
+      ]
+    },
         {
             "Title": "Tankhapay",
             "Description": "At TankhaPay, I led Angular development, enhancing efficiency by 20% through an intuitive interface. I automated payroll processes, ensuring precise salary calculations. Additionally, I integrated robust RESTful APIs using Node.js, facilitating seamless communication between front end and back end. My focus was on streamlining operations and elevating overall platform performance.",
