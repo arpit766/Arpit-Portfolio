@@ -1,105 +1,173 @@
 @import "./../../../../variables.scss";
 
-.about{
+.about {
+    perspective: 1200px;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
 
-    .about-description{
+    .about-description {
         margin-top: 30px;
-        max-width: 480px;
+        max-width: 520px;
+        transform-style: preserve-3d;
     }
 
-    .about-img-container{
+    .about-photo-3d {
+        perspective: 1000px;
+        transform-style: preserve-3d;
+    }
+
+    .about-img-container {
         width: 324px;
         margin: auto;
+        position: relative;
+        isolation: isolate;
 
-        &:after{
+        /* Decorative glow — absolute so it never overlaps the Projects section below */
+        &:after {
             content: '';
-            // border: 2px solid $Green;
+            position: absolute;
             z-index: 0;
-            display: block;
-            position: relative;
-            width: 300px;
-            height: 300px;
-            border-radius: 3px;
-            bottom: 290px;
-            left: 23px;
-
+            width: 280px;
+            height: 280px;
+            left: 50%;
+            bottom: 8px;
+            transform: translateX(-50%);
+            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(100, 255, 218, 0.2), rgba(56, 189, 248, 0.12), rgba(167, 139, 250, 0.18));
+            opacity: 0.55;
+            filter: blur(16px);
+            pointer-events: none;
         }
 
-        img{
+        .about-photo-frame {
+            position: relative;
+            z-index: 2;
+            border-radius: 12px;
+            padding: 3px;
+            background: linear-gradient(145deg, rgba(100, 255, 218, 0.45), rgba(56, 189, 248, 0.2), rgba(167, 139, 250, 0.35));
+            box-shadow:
+                0 24px 48px -12px rgba(2, 12, 27, 0.65),
+                0 0 0 1px rgba(100, 255, 218, 0.12) inset,
+                0 1px 0 rgba(255, 255, 255, 0.08) inset;
+            transform: rotateY(-4deg) rotateX(4deg) translateZ(0);
+            transition: transform 0.55s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.55s ease;
+            transform-style: preserve-3d;
+        }
+
+        .about-portrait-img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            max-height: 420px;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        img {
             z-index: 2;
             position: relative;
+            display: block;
+            border-radius: 9px;
         }
     }
 
-    .skills-list{
+    .about-photo-3d:hover .about-photo-frame {
+        transform: rotateY(0deg) rotateX(0deg) translateZ(12px) scale(1.02);
+        box-shadow:
+            0 32px 64px -16px rgba(2, 12, 27, 0.75),
+            0 0 60px rgba(100, 255, 218, 0.1),
+            0 0 0 1px rgba(100, 255, 218, 0.18) inset;
+    }
+
+    .skills-list {
         display: grid;
-        grid-template-columns: repeat(2,minmax(140px,200px));
-        overflow: hidden;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 12px;
+        overflow: visible;
         padding: 0;
-        margin: 20px 0 0 0;
+        margin: 24px 0 0 0;
         list-style: none;
     }
 
-    .skill-element{
+    .skill-element {
         position: relative;
-        margin-bottom: 10px;
-        padding-left: 20px;
+        margin-bottom: 0;
+        padding: 12px 14px 12px 32px;
         font-size: 13px;
         font-family: $CodeFont;
-        color: $Slate;
-        span{
-          padding-bottom: 5px;
+        color: $LightSlate;
+        background: linear-gradient(155deg, rgba(17, 34, 64, 0.95), rgba(10, 25, 47, 0.85));
+        border: 1px solid rgba(100, 255, 218, 0.12);
+        border-radius: 10px;
+        box-shadow:
+            0 4px 0 rgba(8, 20, 40, 0.85),
+            0 12px 28px rgba(2, 12, 27, 0.35),
+            inset 0 1px 0 rgba(255, 255, 255, 0.04);
+        transform-style: preserve-3d;
+        transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease, border-color 0.3s ease;
+
+        span {
+            padding-bottom: 0;
         }
 
         &:before {
             content: '▹';
             position: absolute;
-            left: 0;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
             color: $Green;
             font-size: 14px;
-            line-height: 12px;
+            line-height: 1;
+        }
+
+        &:hover {
+            transform: translateY(-5px) rotateX(8deg) rotateY(-4deg) translateZ(6px);
+            border-color: rgba(100, 255, 218, 0.35);
+            box-shadow:
+                0 8px 0 rgba(8, 20, 40, 0.75),
+                0 20px 44px rgba(2, 12, 27, 0.5),
+                0 0 32px rgba(100, 255, 218, 0.08);
         }
     }
-
 }
 
-@media (min-width: 992px) and (max-width: 1300px){
-    .about-img-container{
+@media (prefers-reduced-motion: reduce) {
+    .about .skill-element,
+    .about .about-photo-frame {
+        transition: none !important;
+    }
+
+    .about .about-photo-3d:hover .about-photo-frame {
+        transform: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    .about-img-container {
         margin-left: auto;
         margin-right: 0;
     }
 }
 
-@media (max-width: 500px){
-    .about{
-        .about-img-container img{
-            width: 200px;
-            height: 200px;
+@media (max-width: 500px) {
+    .about {
+        .about-img-container .about-portrait-img {
+            max-height: 320px;
         }
+
         .about-img-container:after {
             width: 200px;
             height: 200px;
-            bottom: 190px;
-            left: 74px;
         }
     }
 }
 
-@media (max-width: 500px){
-    .about{
-
+@media (max-width: 500px) {
+    .about {
         .about-img-container {
             width: 100%;
-
-            img{
-                width: 180px;
-                height: 180px;
-            }
-
-            &:after {
-                display: none;
-            }
         }
     }
 }
-

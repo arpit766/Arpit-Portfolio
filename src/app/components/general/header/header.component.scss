@@ -1,7 +1,10 @@
 @import "./../../../../variables.scss";
 .main-navbar {
     height: 70px;
-    background: $Navy;
+    background: rgba(10, 25, 47, 0.72);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border-bottom: 1px solid rgba(100, 255, 218, 0.06);
     font-family: $CodeFont;
     .menu-ul{
       li{
@@ -196,7 +199,9 @@
 
 .nav-shadow {
     height: 70px;
-    box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+    box-shadow:
+        0 10px 40px -12px rgba(2, 12, 27, 0.85),
+        0 0 0 1px rgba(100, 255, 218, 0.04);
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 

@@ -3,12 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "dev": "ng serve --host 127.0.0.1 --port 4302 --open",
     "start": "ng serve",
     "build": "ng build",
+    "build:gh": "ng build --configuration production --base-href /Arpit-Portfolio/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --base-href /Arpit/ && ngh --dir=dist/Arpit-portfolio "
+    "deploy": "npm run build:gh && npx angular-cli-ghpages --dir=dist/Arpit-portfolio --branch=gh-pages --no-silent"
   },
   "private": true,
   "dependencies": {
@@ -37,7 +39,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular/cli": "^20.0.3",
+    "@angular/cli": "~13.2.6",
     "@angular/compiler-cli": "~13.2.3",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",

@@ -12,30 +12,37 @@
                         <p *ngFor='let text of "AboutMe.Paragraphs" | translate' [innerHTML]="text" data-aos="fade-up" data-aos-duration="1000">
                         </p>
                         <ul class="skills-list" data-aos="fade-up">
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Angular </span></li>
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">RxJS, NgRx </span></li>
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">HTML &amp; (S)CSS </span></li>
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">NodeJS </span></li>
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">ExpressJS, NestJS </span></li>
-                            <!-- <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Python </span></li> -->
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Jasmine / Karma (TDD) </span></li>
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">CI / CD </span></li>
+                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Go, Java, Node.js </span></li>
+                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">REST APIs &amp; microservices </span></li>
+                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Apache Kafka </span></li>
+                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">MySQL, PostgreSQL, Redis, MongoDB </span></li>
+                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Angular, React, Next.js </span></li>
+                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Git, CI/CD, Kubernetes, ArgoCD </span></li>
+                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Docker &amp; Linux </span></li>
+                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">gRPC &amp; GraphQL </span></li>
+                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Elasticsearch </span></li>
+                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Terraform / IaC </span></li>
+                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Prometheus </span></li>
+                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Datadog </span></li>
+                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">JWT, OAuth2 </span></li>
                             <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">JavaScript, TypeScript </span></li>
-                            <!-- <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Bootstrap, Material, PrimeFaces, Tailwind </span></li> -->
                         </ul>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mt-4 mt-md-0 text-center" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="about-img-container">
-                        <img 
-                            (click)='analyticsService.sendAnalyticEvent("click_image", "about", "image")'  
-                            width="300" 
-                            height="500" 
-                            src="assets/images/me/Arpit.jpg" 
-                            alt="Git User"
-                            class="rounded-image">
+                    <div class="about-photo-3d">
+                        <div class="about-img-container">
+                            <div class="about-photo-frame">
+                                <img 
+                                    (click)='analyticsService.sendAnalyticEvent("click_image", "about", "image")'  
+                                    width="300" 
+                                    height="380" 
+                                    src="assets/images/me/Arpit-portrait.png" 
+                                    alt="Arpit Kumar"
+                                    class="rounded-image about-portrait-img">
+                            </div>
+                        </div>
                     </div>
-                    
                 </div>
 
             </div>

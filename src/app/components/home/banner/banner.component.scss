@@ -2,6 +2,7 @@
 
 .banner {
     min-height: 100vh;
+    perspective: 1400px;
 
     .container {
         display: table;
@@ -16,34 +17,106 @@
             }
 
             h1 {
-
-                color: #64ffda;
+                color: $Green;
                 margin: 0 0 20px 3px;
                 font-size: 16px;
                 font-weight: normal;
                 font-family: $CodeFont;
+                letter-spacing: 0.04em;
             }
 
-            h2,
-            h3 {
+            .banner-hero-3d {
+                transform-style: preserve-3d;
+                transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            }
+
+            .banner-glass-panel {
+                position: relative;
+                padding: clamp(28px, 5vw, 48px) clamp(24px, 4vw, 44px) clamp(32px, 5vw, 52px);
+                border-radius: 16px;
+                background: linear-gradient(
+                    145deg,
+                    rgba(17, 34, 64, 0.75) 0%,
+                    rgba(10, 25, 47, 0.55) 100%
+                );
+                border: 1px solid rgba(100, 255, 218, 0.12);
+                box-shadow:
+                    0 1px 0 rgba(255, 255, 255, 0.06) inset,
+                    $DepthShadow,
+                    0 0 80px rgba(56, 189, 248, 0.06);
+                backdrop-filter: blur(14px);
+                -webkit-backdrop-filter: blur(14px);
+                transform: rotateX(2deg) translateZ(0);
+                transform-style: preserve-3d;
+            }
+
+            .banner-glass-panel::before {
+                content: '';
+                position: absolute;
+                inset: -1px;
+                border-radius: 17px;
+                padding: 1px;
+                background: linear-gradient(
+                    135deg,
+                    rgba(100, 255, 218, 0.35),
+                    rgba(56, 189, 248, 0.15),
+                    rgba(167, 139, 250, 0.2)
+                );
+                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                pointer-events: none;
+                opacity: 0.85;
+            }
+
+            .banner-title {
+                transform-style: preserve-3d;
+            }
+
+            h2.banner-name-3d,
+            h3.banner-role-3d {
                 font-weight: 600;
-                font-size: 80px;
-                line-height: 1.1;
+                line-height: 1.08;
                 margin: 0;
                 font-family: $MainFont;
-                background: linear-gradient(120deg, #50efb5, #8ff4ca, #7e57c2, #0087f2, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
-                color: #fff;
+                transform-style: preserve-3d;
+                transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            }
+
+            h2.banner-name-3d {
+                font-size: clamp(42px, 8vw, 80px);
+                background: linear-gradient(
+                    125deg,
+                    #e6f1ff 0%,
+                    #a8b2d1 35%,
+                    #64ffda 55%,
+                    #38bdf8 85%,
+                    #a78bfa 100%
+                );
+                background-size: 200% auto;
+                color: $LightestSlate;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                filter: drop-shadow(0 12px 24px rgba(2, 12, 27, 0.45));
+                animation: gradient-shift 10s ease-in-out infinite alternate;
+            }
+
+            h3.banner-role-3d {
+                font-size: clamp(22px, 4vw, 38px);
+                margin-top: 12px;
+                background: linear-gradient(90deg, $Slate, $LightSlate);
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
 
-            h2 {
-                color: $LightestSlate;
-            }
-
-            h3 {
-                color: $Slate;
+            .banner-lead {
+                max-width: 560px;
+                color: $LightSlate;
+                font-size: clamp(17px, 2.2vw, 20px);
+                line-height: 1.55;
             }
 
             .banner-description {
@@ -51,15 +124,35 @@
             }
 
             p {
-                max-width: 500px;
+                max-width: 560px;
             }
 
             .div-btn-banner {
                 height: 43px;
             }
         }
-
-
     }
 }
 
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .banner .container .section-box-banner .banner-hero-3d:hover {
+        transform: rotateX(0deg) translateY(-4px);
+    }
+
+    .banner .container .section-box-banner .banner-hero-3d:hover .banner-glass-panel {
+        transform: rotateX(0deg) translateZ(8px);
+        box-shadow:
+            0 1px 0 rgba(255, 255, 255, 0.08) inset,
+            0 32px 64px -16px rgba(2, 12, 27, 0.75),
+            0 0 100px rgba(100, 255, 218, 0.08);
+    }
+}

@@ -29,9 +29,14 @@
         white-space: nowrap;
         font-size: 60px;
         font-weight: 600;
-        color: $LightestSlate;
         margin: auto;
         width: fit-content;
+        background: linear-gradient(120deg, $LightestSlate 0%, $LightSlate 40%, $Green 100%);
+        background-size: 150% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 12px 28px rgba(2, 12, 27, 0.5));
     }
     .contact-pre-title{
         position: relative;

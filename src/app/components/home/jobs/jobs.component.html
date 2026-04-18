@@ -16,6 +16,14 @@
                           <!-- {{job.Description | json}} -->
                           <p *ngFor='let jobDescriptionParagraph of job.Description; let i = index' class="job-description"
                           [innerHTML]="jobDescriptionParagraph | translate"></p>
+                          <div *ngIf="job.imgs?.length" class="job-gallery" data-aos="fade-up" data-aos-duration="800">
+                            <p class="job-gallery-caption">Paytm Credit Cards — product context</p>
+                            <div class="job-gallery-grid">
+                              <a *ngFor="let img of job.imgs" [href]="img" target="_blank" rel="noopener noreferrer" class="job-gallery-link">
+                                <img [src]="img" alt="Paytm credit card product screenshot" class="job-gallery-img" loading="lazy" width="640" height="360">
+                              </a>
+                            </div>
+                          </div>
                           <span></span>
                         </ng-template>
                     </li>

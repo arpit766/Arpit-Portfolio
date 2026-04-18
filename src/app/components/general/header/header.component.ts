@@ -5,7 +5,6 @@ import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 import { TranslateService } from '@ngx-translate/core';
 import { FormControl } from '@angular/forms';
 import { LanguageService } from 'src/app/services/language/language.service';
-import { ThisReceiver } from '@angular/compiler';
 
 
 @Component({
@@ -60,17 +59,25 @@ export class HeaderComponent implements OnInit {
     this.responsiveMenuVisible=false;
   }
 
-  downloadCV(){
-    this.languageService.translateService.get("Header.cvName").subscribe(val => {
-      this.cvName = val
-      console.log(val)
-      // app url
-      let url = window.location.href;
-
-      // Open a new window with the CV
-      window.open(url + "/../assets/cv/" + this.cvName, "_blank");
-    })
-
+  downloadCV(event?: Event): void {
+    if (event) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    this.analyticsService.sendAnalyticEvent('download_cv', 'header', 'resume');
+    this.languageService.translateService.get('Header.cvName').subscribe((filename) => {
+      this.cvName = filename;
+      const base = document.querySelector('base')?.getAttribute('href') || '/';
+      const prefix = base.endsWith('/') ? base : `${base}/`;
+      const url = `${prefix}assets/cv/${filename}`;
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = filename;
+      link.rel = 'noopener noreferrer';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
   }
 
   @HostListener('window:scroll', ['getScrollPosition($event)'])
