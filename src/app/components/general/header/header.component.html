@@ -20,11 +20,6 @@
                 <a ngbNavLink (click)='scroll("contact")'><span class='nav-number'>05. </span> <span class="underline nav-text"> {{"Header.Item5" | translate}}</span></a>
             </li>
             <li ngbNavItem>
-                <button type="button" class="theme-toggle" (click)="toggleTheme()" [attr.aria-label]="themeService.mode === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'">
-                    <i class="fas" [class.fa-sun]="themeService.mode === 'dark'" [class.fa-moon]="themeService.mode === 'light'"></i>
-                </button>
-            </li>
-            <li ngbNavItem>
                 <a href="#" (click)="downloadCV($event)" class="main-btn cv-btn" ngbNavLink>
                   {{"Header.cvBtn" | translate}}
                 </a>
@@ -51,9 +46,6 @@
                         </li>
                       <li (click)='analyticsService.sendAnalyticEvent("click_contact", "menu", "click")'>
                         <a (click)='scroll("contact")'><span>05. </span> {{"Header.Item5" | translate}}</a>
-                      </li>
-                      <li>
-                          <button type="button" class="theme-toggle mobile" (click)="toggleTheme()">Toggle theme</button>
                       </li>
                       <li>
                           <a href="#" (click)="downloadCV($event)" class="main-btn cv-btn">

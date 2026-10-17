@@ -5,7 +5,6 @@ import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 import { TranslateService } from '@ngx-translate/core';
 import { FormControl } from '@angular/forms';
 import { LanguageService } from 'src/app/services/language/language.service';
-import { ThemeService } from 'src/app/services/theme/theme.service';
 
 
 @Component({
@@ -40,13 +39,10 @@ export class HeaderComponent implements OnInit {
   constructor(
     private router: Router,
     public analyticsService: AnalyticsService,
-    public languageService: LanguageService,
-    public themeService: ThemeService
+    public languageService: LanguageService
   ) { }
 
   ngOnInit(): void {
-    this.themeService.init();
-
     this.languageFormControl.valueChanges.subscribe(val => this.languageService.changeLanguage(val))
 
     this.languageFormControl.setValue(this.languageService.language)
@@ -92,7 +88,4 @@ export class HeaderComponent implements OnInit {
       this.languageFormControl.setValue(language);
     }
 
-    toggleTheme(): void {
-      this.themeService.toggle();
-    }
 }

@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
       {
         name: 'description',
         content:
-          'Backend Software Engineer building production microservices, Kafka pipelines, and reliable fintech integrations.',
+          'Backend Software Engineer with 4+ years building production microservices, Kafka pipelines, and reliable fintech integrations.',
       },
     ]);
     
