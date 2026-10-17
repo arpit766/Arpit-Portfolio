@@ -284,12 +284,10 @@ body.theme-light {
         color: #0f172a;
     }
 
-    .main-navbar {
-        background: rgba(255, 255, 255, 0.85);
-        border-bottom-color: rgba(15, 23, 42, 0.06);
+    .main-navbar .menu-ul .nav-link {
+        color: #334155 !important;
     }
 
-    .nav-text,
     .job-description,
     p {
         color: #334155;
