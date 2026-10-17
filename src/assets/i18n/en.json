@@ -7,7 +7,7 @@
     "Header.cvBtn": "Resume",
     "Header.cvName": "Arpit_Kumar_Resume.pdf",
     "Banner.Pretitle": "Hello! My name is",
-    "Banner.Description": "Backend Software Engineer with <span class='underline'>3+ years</span> building production microservices and distributed systems in fintech. I own <span class='underline'>Go &amp; Node.js services</span>, <span class='underline'>Kafka event pipelines</span>, <span class='underline'>Kubernetes migrations</span>, and multi-bank integrations—focused on reliability, latency, and safe rollouts.",
+    "Banner.Description": "Backend Software Engineer with <span class='underline'>4+ years</span> building production microservices and distributed systems in fintech. I own <span class='underline'>Go &amp; Node.js services</span>, <span class='underline'>Kafka event pipelines</span>, <span class='underline'>Kubernetes migrations</span>, and multi-bank integrations—focused on reliability, latency, and safe rollouts.",
     "Banner.ActionBtn": "Email me",
     "Banner.Role": "Backend Software Engineer · Distributed Systems · SDE-2",
     "AboutMe.Title": "About me",
@@ -116,7 +116,11 @@
             "imgs": [
                 "assets/images/paytm/paytm-credit-cards-landing.png",
                 "assets/images/paytm/paytm-hdfc-cobrand.png",
-                "assets/images/paytm/paytm-bank-cards-explore.png"
+                "assets/images/paytm/paytm-bank-cards-explore.png",
+                "assets/images/paytm/paytm-au-rupay-card.png",
+                "assets/images/paytm/paytm-hdfc-freedom-upi.png",
+                "assets/images/paytm/paytm-link-rupay.png",
+                "assets/images/paytm/paytm-kotak-rupay-cards.png"
             ]
         },
         {
@@ -240,6 +244,13 @@
     ],
     "OtherProjects.Title": "Open source & GitHub",
     "OtherProjects.Projects": [
+        {
+            "Title": "AI Job Hunter",
+            "Description": "Review-first job discovery and application workflow — Next.js dashboard, PostgreSQL, BullMQ, and MCP tools for Cursor. Public overview on GitHub Pages.",
+            "ghLink": "https://github.com/arpit766/ai-job-hunter",
+            "demoLink": "https://arpit766.github.io/ai-job-hunter/",
+            "Technologies": ["TypeScript", "Next.js", "Prisma", "MCP", "BullMQ"]
+        },
         {
             "Title": "Freshdesk MCP Connector",
             "Description": "Read-only Model Context Protocol server exposing Freshdesk tickets to AI agents—Zod validation, retries, mock mode, and evaluation tests (TypeScript).",

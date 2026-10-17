@@ -156,6 +156,25 @@
 
 
 
+:host-context(body.theme-light) {
+    ::ng-deep .jobs .jobs-tabs a {
+        color: #475569 !important;
+    }
+
+    ::ng-deep .jobs .jobs-tabs a.active {
+        color: #0d9488 !important;
+        background: linear-gradient(90deg, rgba(241, 245, 249, 0.95), rgba(226, 232, 240, 0.8)) !important;
+    }
+
+    .jobs .title-tab-content {
+        color: #0f172a;
+    }
+
+    .jobs .job-time {
+        color: #64748b;
+    }
+}
+
 @media (max-width: 768px){
     .jobs {
         .job-description{
