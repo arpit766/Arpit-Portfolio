@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1776507259042,
+  "timestamp": 1792259149847,
   "index": "/Arpit-Portfolio/index.html",
   "assetGroups": [
     {
@@ -13,12 +13,12 @@
       "urls": [
         "/Arpit-Portfolio/favicon.ico",
         "/Arpit-Portfolio/index.html",
-        "/Arpit-Portfolio/main.af3842926563060e.js",
+        "/Arpit-Portfolio/main.2c4944c0872383b3.js",
         "/Arpit-Portfolio/manifest.webmanifest",
         "/Arpit-Portfolio/polyfills.62fac8a24508365f.js",
         "/Arpit-Portfolio/runtime.818016794b4d4a60.js",
         "/Arpit-Portfolio/scripts.8c844e0f4a27dcd1.js",
-        "/Arpit-Portfolio/styles.02180d6e0412e734.css"
+        "/Arpit-Portfolio/styles.32dbe169da6eefe4.css"
       ],
       "patterns": []
     },
@@ -58,6 +58,7 @@
         "/Arpit-Portfolio/SFMono-Semibold.849266397229adad.woff",
         "/Arpit-Portfolio/SFMono-SemiboldItalic.0ef5133ede504d56.woff2",
         "/Arpit-Portfolio/SFMono-SemiboldItalic.33cb8d6968ae9130.woff",
+        "/Arpit-Portfolio/assets/cv/Arpit_Kumar_Resume.pdf",
         "/Arpit-Portfolio/assets/cv/Arpit_resume_.pdf",
         "/Arpit-Portfolio/assets/fonts/Calibre/Calibre-Light.ttf",
         "/Arpit-Portfolio/assets/fonts/Calibre/Calibre-Light.woff",
@@ -187,6 +188,7 @@
     "/Arpit-Portfolio/SFMono-Semibold.849266397229adad.woff": "999e816498b39e99896d09cb18614e5bb700fa8e",
     "/Arpit-Portfolio/SFMono-SemiboldItalic.0ef5133ede504d56.woff2": "3621c6894388833626fd4cf132087a3f46a54a21",
     "/Arpit-Portfolio/SFMono-SemiboldItalic.33cb8d6968ae9130.woff": "4bb2ddc7da8064698328e123bd3ec673f674a90d",
+    "/Arpit-Portfolio/assets/cv/Arpit_Kumar_Resume.pdf": "6ef209542d8569591621215c1e364300aba33067",
     "/Arpit-Portfolio/assets/cv/Arpit_resume_.pdf": "712afc3d0f25f79fe754619cfb61faeaf6756537",
     "/Arpit-Portfolio/assets/fonts/Calibre/Calibre-Light.ttf": "8eccfc3783b04d13dec5887a15c3e00fd28bef7c",
     "/Arpit-Portfolio/assets/fonts/Calibre/Calibre-Light.woff": "e3fbab74fa86b97c78ad1b1965b327fe5b2a1adb",
@@ -232,7 +234,7 @@
     "/Arpit-Portfolio/assets/fonts/SFMono/SFMono-SemiboldItalic.woff": "4bb2ddc7da8064698328e123bd3ec673f674a90d",
     "/Arpit-Portfolio/assets/fonts/SFMono/SFMono-SemiboldItalic.woff2": "3621c6894388833626fd4cf132087a3f46a54a21",
     "/Arpit-Portfolio/assets/fonts/SFMono/stylesheet.css": "9d845bf2b6a9e53e38bfc797758fbe38c2b99470",
-    "/Arpit-Portfolio/assets/i18n/en.json": "5d9c44851068e33367857e152adccaec2f147982",
+    "/Arpit-Portfolio/assets/i18n/en.json": "c83f10798ceb1638a675456aa546b93771f51596",
     "/Arpit-Portfolio/assets/images/1.png": "94a51dca79ef550d868c07e725d8e55185e6077c",
     "/Arpit-Portfolio/assets/images/10.png": "32c46b3ae27b4c6281ea07bc24036ade907ff75a",
     "/Arpit-Portfolio/assets/images/11.png": "d47df6d91d62d24d26a66f0b7001a19bb66768ce",
@@ -282,14 +284,14 @@
     "/Arpit-Portfolio/fa-solid-900.d5b0a3566b352ee9.ttf": "eb8914f6b1797b45ee0883e6089d92695d9f9441",
     "/Arpit-Portfolio/fa-solid-900.e67670b0779338ff.woff": "a22acd7697f36e7d4cc31a853c70e776eac54bb1",
     "/Arpit-Portfolio/favicon.ico": "97c827d7b24e8fa8795e691c55f62129e3c29f6d",
-    "/Arpit-Portfolio/index.html": "6af9675ccb7a3554c91bcb94ff0aee7e207832a3",
-    "/Arpit-Portfolio/main.af3842926563060e.js": "0d2cd12da1a669131a7d84c340bc0debecb12574",
+    "/Arpit-Portfolio/index.html": "546f46a326d0dddf3f1650595a7a6e64e46c123b",
+    "/Arpit-Portfolio/main.2c4944c0872383b3.js": "42fea169255c2d265d468b68300336bb822de45c",
     "/Arpit-Portfolio/manifest.webmanifest": "9baa151d44f31193283ded7acfc55c431e33b5f5",
     "/Arpit-Portfolio/owl.video.play.e3b436436832b027.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",
     "/Arpit-Portfolio/polyfills.62fac8a24508365f.js": "18e31a57a96db8767e224c1fac5bb125e8255929",
     "/Arpit-Portfolio/runtime.818016794b4d4a60.js": "cb166058a152d7bf4df0258ddc2dd551c875d762",
     "/Arpit-Portfolio/scripts.8c844e0f4a27dcd1.js": "918911acf148c5fb11000ba58f7ba971cc71b517",
-    "/Arpit-Portfolio/styles.02180d6e0412e734.css": "3324abe7e27e42d2dcc96e8a05736e7b53a1e00a"
+    "/Arpit-Portfolio/styles.32dbe169da6eefe4.css": "8055d4ecf6ba8539bd923963f147c73cc824b1b5"
   },
   "navigationUrls": [
     {
