@@ -1,4 +1,27 @@
 @import "./../../../../variables.scss";
+
+.theme-toggle {
+  border: 1px solid rgba(100, 255, 218, 0.35);
+  background: transparent;
+  color: $Green;
+  border-radius: 8px;
+  width: 40px;
+  height: 36px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: $GreenOpacity;
+  }
+
+  &.mobile {
+    width: auto;
+    padding: 0.5rem 1rem;
+    margin-left: 20px;
+    color: $LightestSlate;
+  }
+}
+
 .main-navbar {
     height: 70px;
     background: rgba(10, 25, 47, 0.72);

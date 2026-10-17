@@ -1,0 +1,94 @@
+@import './../../../../variables.scss';
+
+.case-study {
+  margin-bottom: 2.5rem;
+  padding: 1.75rem;
+  border-radius: 16px;
+  border: 1px solid rgba(100, 255, 218, 0.12);
+  background: linear-gradient(145deg, rgba(17, 34, 64, 0.72), rgba(10, 25, 47, 0.45));
+}
+
+.case-tag {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-family: $CodeFont;
+  font-size: 0.75rem;
+  color: $Green;
+  background: $GreenOpacity;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.case-study h4 {
+  margin: 0 0 0.5rem;
+  color: $LightestSlate;
+  font-size: 1.25rem;
+}
+
+.case-summary {
+  color: $Slate;
+  margin: 0 0 1rem;
+  line-height: 1.55;
+}
+
+.case-points {
+  margin: 0 0 1.25rem;
+  padding-left: 1.15rem;
+  color: $LightSlate;
+
+  li {
+    margin-bottom: 0.4rem;
+  }
+}
+
+.arch-diagram {
+  font-family: $CodeFont;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: $AccentBlue;
+  background: rgba(2, 12, 27, 0.55);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  overflow-x: auto;
+  white-space: pre;
+  border: 1px dashed rgba(56, 189, 248, 0.25);
+}
+
+.section-lead {
+  max-width: 52rem;
+  color: $LightSlate;
+  line-height: 1.55;
+}
+
+.disclaimer {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: $Slate;
+  font-style: italic;
+}
+
+:host-context(body.theme-light) {
+  .case-study {
+    background: #fff;
+    border-color: rgba(15, 23, 42, 0.08);
+  }
+
+  .case-study h4 {
+    color: #0f172a;
+  }
+
+  .case-summary,
+  .disclaimer {
+    color: #64748b;
+  }
+
+  .case-points {
+    color: #334155;
+  }
+
+  .arch-diagram {
+    background: #f8fafc;
+    color: #0369a1;
+  }
+}

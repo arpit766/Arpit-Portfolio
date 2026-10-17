@@ -1,0 +1,46 @@
+@import './../../../../variables.scss';
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.expertise-card {
+  padding: 1.35rem 1.25rem 1.5rem;
+  border-radius: 14px;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  background: rgba(17, 34, 64, 0.55);
+  backdrop-filter: blur(8px);
+}
+
+.expertise-heading {
+  margin: 0 0 0.75rem;
+  font-family: $CodeFont;
+  font-size: 0.95rem;
+  color: $AccentBlue;
+  letter-spacing: 0.02em;
+}
+
+.expertise-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: $LightSlate;
+  font-size: 0.95rem;
+  line-height: 1.55;
+
+  li {
+    margin-bottom: 0.35rem;
+  }
+}
+
+:host-context(body.theme-light) {
+  .expertise-card {
+    background: #fff;
+    border-color: rgba(15, 23, 42, 0.08);
+  }
+
+  .expertise-list {
+    color: #334155;
+  }
+}

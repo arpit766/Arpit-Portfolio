@@ -21,10 +21,18 @@ export class AppComponent implements OnInit {
 
     this.languageService.initLanguage()
 
-    this.titleService.setTitle("Arpit kumar | Full Stack Developer | Software Engineer");
+    this.titleService.setTitle('Arpit Kumar | Backend Software Engineer | Distributed Systems');
     this.metaService.addTags([
-      { name: 'keywords', content: 'Full Stack Developer, MEAN Stack Developer , MERN Stack Development , Software Engineer, software, developer' },
-      { name: 'description', content: 'As a software engineer with expertise in Frontend, I have a comprehensive understanding of full-stack web development. My strong foundation in JavaScript allows me to effectively work with front-end technologies such as Angular , as well as back-end technologies such as Node.js and Express.' },
+      {
+        name: 'keywords',
+        content:
+          'Backend Engineer, Distributed Systems, Go, Node.js, Kafka, Kubernetes, Paytm, microservices, SDE-2',
+      },
+      {
+        name: 'description',
+        content:
+          'Backend Software Engineer building production microservices, Kafka pipelines, and reliable fintech integrations.',
+      },
     ]);
     
     AOS.init();

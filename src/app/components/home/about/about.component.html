@@ -3,7 +3,7 @@
         <div class="section-box">
             <div class="about-title" data-aos="fade-up">
                 <h3 class="section-title">
-                    <span class='n-section-title'>01.</span> {{"AboutMe.Title" | translate}}
+                    <span class='n-section-title'>01.</span> {{ "AboutMe.Title" | translate }}
                 </h3>
             </div>
             <div class="row">
@@ -12,20 +12,9 @@
                         <p *ngFor='let text of "AboutMe.Paragraphs" | translate' [innerHTML]="text" data-aos="fade-up" data-aos-duration="1000">
                         </p>
                         <ul class="skills-list" data-aos="fade-up">
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Go, Java, Node.js </span></li>
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">REST APIs &amp; microservices </span></li>
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Apache Kafka </span></li>
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">MySQL, PostgreSQL, Redis, MongoDB </span></li>
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Angular, React, Next.js </span></li>
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Git, CI/CD, Kubernetes, ArgoCD </span></li>
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Docker &amp; Linux </span></li>
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">gRPC &amp; GraphQL </span></li>
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Elasticsearch </span></li>
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Terraform / IaC </span></li>
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Prometheus </span></li>
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Datadog </span></li>
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">JWT, OAuth2 </span></li>
-                            <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">JavaScript, TypeScript </span></li>
+                            <li *ngFor="let skill of 'AboutMe.Skills' | translate" class="skill-element" data-aos="fade-up" data-aos-duration="1000">
+                                <span class="underline">{{ skill }}</span>
+                            </li>
                         </ul>
                     </div>
                 </div>

@@ -1,33 +1,117 @@
 {
-    "Header.Item1": "About me",
+    "Header.Item1": "About",
     "Header.Item2": "Experience",
     "Header.Item3": "Projects",
-    "Header.Item4": "Contact",
+    "Header.Item4": "Case studies",
+    "Header.Item5": "Contact",
     "Header.cvBtn": "Resume",
-    "Header.cvName": "Arpit_resume_.pdf",
-    "Banner.Pretitle": "Hello! My Name is",
-    "Banner.Description": "I have <span class='underline'>3+ years of experience</span> building scalable backend systems, microservices, and distributed applications in fintech and insurance. I work with <span class='underline'>Go, Node.js, Java, REST APIs, Kafka, MySQL, and Redis</span>, with a focus on production reliability, latency, and throughput.",
-    "Banner.ActionBtn": "Mail: arpitkmar302@gmail.com",
+    "Header.cvName": "Arpit_Kumar_Resume.pdf",
+    "Banner.Pretitle": "Hello! My name is",
+    "Banner.Description": "Backend Software Engineer with <span class='underline'>3+ years</span> building production microservices and distributed systems in fintech. I own <span class='underline'>Go &amp; Node.js services</span>, <span class='underline'>Kafka event pipelines</span>, <span class='underline'>Kubernetes migrations</span>, and multi-bank integrations—focused on reliability, latency, and safe rollouts.",
+    "Banner.ActionBtn": "Email me",
+    "Banner.Role": "Backend Software Engineer · Distributed Systems · SDE-2",
     "AboutMe.Title": "About me",
     "AboutMe.Paragraphs": [
-        "In my <span class='underline'>3+ years of experience</span> as a developer, I seek to train every day. I have worked writing <span class='underline'>clean and responsive code</span>, <span class='underline'>performing continuous integration</span>, and covering backend developer roles with <span class='underline'>Node.js and SQL</span>. I have led teams with empathy, motivating partners, and setting plans and goals together.",
-        "I also build microservices, event-driven systems, and production integrations across fintech—with strong focus on reliability, observability, and performance at scale.",
-        "Some of the technologies I work with include (but are not limited to):"
+        "I am a <span class='underline'>Backend Software Engineer</span> based in Noida, currently at <span class='underline'>Paytm</span>, with experience across fintech and insurance. I design REST APIs, asynchronous workers, and event-driven flows where correctness, idempotency, and observability matter.",
+        "My work spans <span class='underline'>zero-downtime infrastructure migrations</span>, credit-card lifecycle processing, premium/quote engines, and payroll platforms—always with an emphasis on measurable throughput and latency improvements.",
+        "Technologies I have used professionally (from my resume):"
     ],
-    "Experience.Title": "Experience",
+    "AboutMe.Skills": [
+        "Go, Node.js, TypeScript, JavaScript, Java, SQL, C++",
+        "Microservices, REST APIs, distributed systems, async workers",
+        "Apache Kafka, consumer groups, event-driven architecture",
+        "MySQL, PostgreSQL, Redis, MongoDB, query optimization",
+        "Kubernetes, Docker, AWS EC2, ArgoCD, CI/CD, HPA",
+        "Prometheus, Grafana, Kibana, retries, idempotency, audit logging"
+    ],
+    "Impact.Title": "Engineering impact",
+    "Impact.Subtitle": "Metrics below are taken from my resume and reflect production outcomes—not estimates.",
+    "Impact.Metrics": [
+        {
+            "value": "100K+",
+            "label": "Credit-card applications / month",
+            "context": "Go & Node.js microservices at Paytm"
+        },
+        {
+            "value": "50K+",
+            "label": "Lifecycle events / day",
+            "context": "Kafka pipelines at 99.9% uptime"
+        },
+        {
+            "value": "40%",
+            "label": "Lower p99 latency",
+            "context": "MySQL tuning + Redis caching"
+        },
+        {
+            "value": "30%",
+            "label": "Faster end-to-end processing",
+            "context": "REST + async Kafka workers"
+        },
+        {
+            "value": "500+",
+            "label": "Parallel jobs / batch",
+            "context": "Configurable Axis Bank background workers"
+        },
+        {
+            "value": "85%+",
+            "label": "Test coverage",
+            "context": "Critical quote/proposal flows at InsuranceDekho"
+        }
+    ],
+    "Expertise.Title": "Technical expertise",
+    "Expertise.Groups": [
+        {
+            "title": "Backend & APIs",
+            "items": [
+                "Microservices and REST API design",
+                "Event-driven architecture and webhooks",
+                "Configurable background workers",
+                "Idempotency, retries, and audit logging"
+            ]
+        },
+        {
+            "title": "Distributed systems",
+            "items": [
+                "Apache Kafka and consumer groups",
+                "Parallel DB and consumer migrations",
+                "Zero-downtime rollouts and rollback runbooks",
+                "HPA and pod autoscaling on Kubernetes"
+            ]
+        },
+        {
+            "title": "Data stores",
+            "items": [
+                "MySQL & PostgreSQL query optimization",
+                "Redis caching for hot paths",
+                "MongoDB for product configuration data"
+            ]
+        },
+        {
+            "title": "Cloud & reliability",
+            "items": [
+                "AWS EC2 → Kubernetes migrations",
+                "ArgoCD, Docker, CI/CD pipelines",
+                "Prometheus, Grafana, Kibana observability"
+            ]
+        },
+        {
+            "title": "Languages",
+            "items": ["Go", "Node.js / TypeScript", "Java", "JavaScript", "SQL", "C++"]
+        }
+    ],
+    "Experience.Title": "Professional experience",
     "Experience.Jobs": [
         {
             "Tab": "Paytm",
-            "Title": "Software Engineer",
-            "Date": "September 2025 – Present",
+            "Title": "Software Engineer — Backend",
+            "Date": "September 2025 – Present · Noida",
             "Description": [
-                "Owned end-to-end design and development of AU Small Finance Bank (AU SFB) integration, delivering a successful production release; collaborated cross-functionally with BFF, frontend, and operations teams to ensure seamless rollout.",
-                "Led solutioning and implementation of RBL Account Aggregator integration, enabling credit card growth with zero downtime and high availability during production launch.",
-                "Built and scaled microservices for a credit card platform handling 100,000+ applications/month; developed REST APIs and asynchronous workers using Node.js and Go, reducing processing time by 30%.",
-                "Designed and implemented event-driven architecture using Apache Kafka, processing 50,000+ events/day with 99.9% uptime; optimized MySQL and Redis queries, improving system latency by 40%.",
-                "Delivered HDFC credit card integration, including application submission, consent management, income verification (Perfios), OTP authentication, and demographic workflows; supported dual-bank journeys (Salesforce + legacy systems).",
-                "Engineered Axis Bank background workers for status synchronization, KYC polling, retry mechanisms, and compliance-driven data purging; processed 500+ parallel jobs per batch with high reliability.",
-                "Independently migrated 10+ microservices from lending infrastructure to new RU infrastructure with zero downtime, zero production defects, and full service stability, ensuring seamless traffic transition and improved system resilience."
+                "Owned end-to-end <strong>EC2 → Kubernetes migration</strong> for Lending infrastructure (Resolver, Catalogue, Prefill, Credit Card Integration) with zero downtime—pod sizing, replica planning, HPA, and rollback strategies.",
+                "Executed parallel <strong>database and Kafka consumer migrations</strong> with zero message loss; handled consumer re-partitioning, integrity checkpoints, and validation runbooks.",
+                "Engineered Go and Node.js microservices for a credit-card platform processing <strong>100K+ applications/month</strong>; REST APIs and Kafka workers cut end-to-end processing time by <strong>30%</strong>.",
+                "Designed Kafka-based lifecycle processing for <strong>50K+ events/day</strong> at <strong>99.9% uptime</strong>; optimized MySQL and Redis to reduce <strong>p99 latency by 40%</strong>.",
+                "Led HDFC, SBI, Axis, AU Small Finance Bank, and RBL integrations—consent, OTP, KYC/Perfios, Account Aggregator, status sync, retries, and compliance workflows.",
+                "Architected Axis Bank background workers (KYC polling, status sync, scheduled retries, compliance purge) supporting <strong>500+ parallel jobs/batch</strong> with configurable concurrency."
             ],
             "imgs": [
                 "assets/images/paytm/paytm-credit-cards-landing.png",
@@ -38,30 +122,90 @@
         {
             "Tab": "InsuranceDekho",
             "Title": "Software Development Engineer I",
-            "Date": "March 2025 – August 2025",
+            "Date": "March 2025 – August 2025 · Gurgaon",
             "Description": [
-                "Integrated ICICI Elevate and Care Ultimate insurance plans, reducing time to market by 35%.",
-                "Developed premium calculators with 20+ add-ons and eligibility modules using Node.js and MongoDB.",
-                "Improved quote parsing and rendering performance by 20% for 50,000+ daily quotes."
+                "Integrated ICICI Elevate and Care Ultimate insurance plans end-to-end, reducing time-to-market by <strong>35%</strong>.",
+                "Built premium-calculation and eligibility modules with <strong>20+ add-ons</strong> using Node.js and MongoDB; optimized quote rendering for <strong>50K+ daily quotes</strong> (20% lower latency via caching, lazy loading, compression).",
+                "Achieved <strong>85%+ test coverage</strong> on critical quote/proposal flows with Jest and standardized APIs using Swagger."
             ]
         },
         {
-            "Tab": "Akal Infosys",
+            "Tab": "Akal Information Systems",
             "Title": "Junior Software Developer",
-            "Date": "July 2023 – February 2025",
+            "Date": "July 2023 – February 2025 · New Delhi",
             "Description": [
-                "Built payroll and reporting modules used in large-scale government contracts.",
-                "Integrated Angular frontend with Node.js backend services, reducing payroll cycle time by 25%.",
-                "Implemented Redis caching to reduce API response time by 40%."
+                "Built employee lifecycle and exit-management modules for TankhaPay—onboarding, offboarding, final settlement, clearance, and statutory deductions.",
+                "Automated payroll disbursement, bank validation, and reconciliation; reduced payroll errors by <strong>30%</strong> and cycle time by <strong>25%</strong>.",
+                "Introduced Redis caching on high-frequency employee and payroll endpoints, cutting API response time by <strong>40%</strong> under concurrent load."
             ]
         }
     ],
-    "FeatureProjects.Title": "Projects",
-    "FeatureProjects.Label": "Featured Project",
+    "CaseStudies.Title": "Engineering case studies",
+    "CaseStudies.Intro": "Sanitized architecture notes from production fintech work at Paytm. No proprietary code, credentials, or internal endpoints are included.",
+    "CaseStudies.Disclaimer": "Professional experience case studies are generalized for public sharing. Personal projects are labeled separately in the projects section.",
+    "CaseStudies.Items": [
+        {
+            "context": "Paytm · Infrastructure",
+            "title": "Zero-downtime EC2 → Kubernetes migration",
+            "summary": "Migrated Lending microservices (resolver, catalogue, prefill, credit-card integration) without user-visible downtime.",
+            "highlights": [
+                "Replica and HPA planning per service criticality",
+                "Blue/green style traffic shift with rollback checkpoints",
+                "Parallel validation of health, Kafka lag, and DB connectivity"
+            ],
+            "diagram": "[ Users ] → [ Ingress / LB ]\n        ↓\n [ K8s Deployments: Resolver | Catalogue | Prefill | CCIS ]\n        ↓                    ↓\n   [ MySQL ]          [ Kafka consumers ]\n        ↓\n [ Observability: metrics + structured audit logs ]"
+        },
+        {
+            "context": "Paytm · Event processing",
+            "title": "Kafka credit-card lifecycle pipeline",
+            "summary": "Event-driven processing for application and lifecycle states with high throughput and clear ownership boundaries.",
+            "highlights": [
+                "Topic design with consumer groups per workflow stage",
+                "Idempotent handlers and retry topics for poison messages",
+                "Lag, error-rate, and p99 dashboards for on-call"
+            ],
+            "diagram": "[ API ] → ( publish ) → [ Kafka: lifecycle events ]\n                              ↓\n        ┌──────────────┬──────────────┬──────────────┐\n        │ KYC worker   │ Status sync  │ Notifications│\n        └──────────────┴──────────────┴──────────────┘\n                              ↓\n                     [ MySQL + Redis cache ]"
+        },
+        {
+            "context": "Paytm · Integrations",
+            "title": "Multi-bank external API workflows",
+            "summary": "Reliable orchestration across bank partners with consent, OTP, KYC, and Account Aggregator handoffs.",
+            "highlights": [
+                "Correlation IDs across partner callbacks",
+                "Configurable retries with backoff and idempotency keys",
+                "Audit logs for compliance-sensitive transitions"
+            ],
+            "diagram": "[ Mobile / Web ] → [ BFF ] → [ CCIS orchestration ]\n                                      ↓\n            ┌────────────┬────────────┼────────────┐\n            ↓            ↓            ↓            ↓\n        [ HDFC ]    [ SBI ]      [ Axis ]     [ RBL ]\n            └────────────┴────────────┴────────────┘\n                              ↓\n                   [ Status + webhook ingress ]"
+        },
+        {
+            "context": "Paytm · Performance",
+            "title": "Redis caching & database tuning",
+            "summary": "Reduced hot-path latency by combining query optimization with cache-aside patterns.",
+            "highlights": [
+                "Identified N+1 and table-scan patterns in MySQL",
+                "TTL and key design for read-heavy catalogue data",
+                "Measured p99 improvements before/after rollout"
+            ],
+            "diagram": "[ Read API ] → Redis? ──hit──→ response\n                  │\n                 miss\n                  ↓\n              [ MySQL ]\n                  ↓\n            populate cache"
+        },
+        {
+            "context": "Paytm · Reliability",
+            "title": "Background workers, retries & idempotency",
+            "summary": "Batch workers for KYC polling, status synchronization, and compliance-driven purges.",
+            "highlights": [
+                "Concurrency limits per partner SLA",
+                "Scheduled retries with dead-letter handling",
+                "Job audit trail for support and compliance review"
+            ],
+            "diagram": "[ Scheduler ] → [ Job queue / worker pool ]\n                         ↓\n              [ Partner status APIs ]\n                         ↓\n           idempotent write → [ MySQL ]\n                         ↓\n                  [ metrics + alerts ]"
+        }
+    ],
+    "FeatureProjects.Title": "Featured work",
+    "FeatureProjects.Label": "Featured",
     "FeatureProjects.Projects": [
         {
-            "Title": "Tankhapay",
-            "Description": "At TankhaPay, I led Angular development, enhancing efficiency by 20% through an intuitive interface. I automated payroll processes, ensuring precise salary calculations. Additionally, I integrated robust RESTful APIs using Node.js, facilitating seamless communication between front end and back end. My focus was on streamlining operations and elevating overall platform performance.",
+            "Title": "TankhaPay (Akal Information Systems)",
+            "Description": "Employee lifecycle, payroll, and exit-management platform built as part of my role at Akal Information Systems. Highlights include payroll automation, bank validation, reconciliation, and Redis-backed performance improvements on high-traffic endpoints.",
             "imgs": [
                 "assets/images/1.png",
                 "assets/images/2.png",
@@ -77,18 +221,11 @@
                 "assets/images/12.png",
                 "assets/images/13.png"
             ],
-            "Technologies": [
-                "Angular",
-                "Node Js",
-                "Typescript",
-                "RxJS",
-                "HTML & CSS",
-                "Javascript"
-            ]
+            "Technologies": ["Angular", "Node.js", "TypeScript", "Redis", "REST APIs"]
         },
         {
             "Title": "Doodle Keep",
-            "Description": "In the Doodle Keep project, I spearheaded the development of a dynamic note-taking application using Angular, focusing on creating a highly responsive and user-friendly interface. I implemented features like real-time data synchronization and optimized the app’s performance to handle large volumes of user input smoothly. By leveraging Angular’s reactive forms and robust state management, I ensured efficient data handling and seamless user experiences. Additionally, I integrated RESTful APIs to enable secure data storage and retrieval, providing a stable foundation for note management and enhancing overall platform reliability. <a href='https://tinyurl.com/doodle-keep' target='_blank'><i class='ml-3 fas fa-external-link-alt'></i>&nbsp; Click here to view Doodle Keep live</a>",
+            "Description": "Personal note-taking web app with responsive Angular UI and API-backed persistence. <a href='https://tinyurl.com/doodle-keep' target='_blank' rel='noopener noreferrer'><i class='ml-3 fas fa-external-link-alt'></i> Live demo</a>",
             "LiveURL": "https://tinyurl.com/doodle-keep",
             "imgs": [
                 "assets/images/doodle1.png",
@@ -98,18 +235,59 @@
                 "assets/images/doodle5.png",
                 "assets/images/doodle6.png"
             ],
-            "Technologies": [
-                "Angular",
-                "Node Js",
-                "Typescript",
-                "RxJS",
-                "HTML & CSS",
-                "Javascript"
-            ]
+            "Technologies": ["Angular", "TypeScript", "REST APIs", "HTML & CSS"]
         }
     ],
-    "Contact.Pretitle": "What’s Next",
-    "Contact.Title": "Get in touch!",
-    "Contact.Content": "I will be happy to receive your contact if you want to talk about new opportunities. Write me, and I will reply as soon as I see your message. Simple one-page design that features a profile letter with basic information about a person.",
-    "Contact.Btn": "Say Hello"
+    "OtherProjects.Title": "Open source & GitHub",
+    "OtherProjects.Projects": [
+        {
+            "Title": "Freshdesk MCP Connector",
+            "Description": "Read-only Model Context Protocol server exposing Freshdesk tickets to AI agents—Zod validation, retries, mock mode, and evaluation tests (TypeScript).",
+            "ghLink": "https://github.com/arpit766/freshdesk-mcp-connector",
+            "demoLink": "https://github.com/arpit766/freshdesk-mcp-connector#readme",
+            "Technologies": ["TypeScript", "MCP", "Zod", "Node.js"]
+        },
+        {
+            "Title": "Instagram Clone API",
+            "Description": "REST API backend inspired by Instagram—authentication, posts, and social graph patterns (JavaScript/Node).",
+            "ghLink": "https://github.com/arpit766/instagram-clone-api",
+            "demoLink": "https://github.com/arpit766/instagram-clone-api",
+            "Technologies": ["Node.js", "JavaScript", "REST", "MongoDB"]
+        },
+        {
+            "Title": "Weecom",
+            "Description": "TypeScript project exploring real-time communication patterns and modular service layout.",
+            "ghLink": "https://github.com/arpit766/weecom",
+            "demoLink": "https://github.com/arpit766/weecom",
+            "Technologies": ["TypeScript", "Node.js"]
+        },
+        {
+            "Title": "CloudEagle Assignment",
+            "Description": "Java backend assignment implementing structured APIs and persistence patterns.",
+            "ghLink": "https://github.com/arpit766/cloudEagle-Assignment-",
+            "demoLink": "https://github.com/arpit766/cloudEagle-Assignment-",
+            "Technologies": ["Java", "REST APIs"]
+        }
+    ],
+    "DSA.Title": "Problem solving",
+    "DSA.Stats": [
+        { "value": "611", "label": "LeetCode problems solved" },
+        { "value": "547", "label": "LeetCode solutions in C++" },
+        { "value": "500+", "label": "DSA problems (resume aggregate)" },
+        { "value": "5★", "label": "HackerRank C++ & Algorithms" }
+    ],
+    "DSA.Links": [
+        {
+            "label": "LeetCode — Arpit1kumar",
+            "url": "https://leetcode.com/u/Arpit1kumar/"
+        },
+        {
+            "label": "GeeksforGeeks — arpitkmar302",
+            "url": "https://www.geeksforgeeks.org/profile/arpitkmar302?tab=activity"
+        }
+    ],
+    "Contact.Pretitle": "What's next",
+    "Contact.Title": "Get in touch",
+    "Contact.Content": "I'm open to backend and distributed-systems roles (SDE-2 / Senior Software Engineer) at product-led companies. Email is the fastest way to reach me—I'll respond as soon as I can.",
+    "Contact.Btn": "arpitkmar302@gmail.com"
 }

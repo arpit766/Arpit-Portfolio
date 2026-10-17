@@ -1,0 +1,29 @@
+<section class="section case-studies" id="case-studies">
+  <div class="container">
+    <div class="section-box">
+      <div class="about-title mb-4" data-aos="fade-up">
+        <h3 class="section-title">
+          <span class="n-section-title">05.</span> {{ 'CaseStudies.Title' | translate }}
+        </h3>
+      </div>
+      <p class="section-lead mb-4" data-aos="fade-up">{{ 'CaseStudies.Intro' | translate }}</p>
+
+      <article
+        *ngFor="let study of 'CaseStudies.Items' | translate; let i = index"
+        class="case-study"
+        data-aos="fade-up"
+        [attr.data-aos-delay]="i * 80"
+      >
+        <span class="case-tag">{{ study.context }}</span>
+        <h4>{{ study.title }}</h4>
+        <p class="case-summary">{{ study.summary }}</p>
+        <ul class="case-points">
+          <li *ngFor="let point of study.highlights">{{ point }}</li>
+        </ul>
+        <pre class="arch-diagram" aria-label="Architecture diagram">{{ study.diagram }}</pre>
+      </article>
+
+      <p class="disclaimer">{{ 'CaseStudies.Disclaimer' | translate }}</p>
+    </div>
+  </div>
+</section>

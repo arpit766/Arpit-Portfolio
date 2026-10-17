@@ -9,15 +9,40 @@
                         </div>
                         <div class='banner-title'>
                             <h2 class="banner-name-3d">Arpit Kumar.</h2>
-                            <h3 class="banner-role-3d">Software Engineer · Backend</h3>
+                            <h3 class="banner-role-3d">{{ 'Banner.Role' | translate }}</h3>
                         </div>
                         <div class='banner-description'>
                             <p [innerHTML]='"Banner.Description" | translate' class="mt-4 banner-lead"></p>
                         </div>
+                        <ul class="banner-social" aria-label="Profile links">
+                            <li>
+                                <a href="https://github.com/arpit766" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/arpitkmar302" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:arpitkmar302@gmail.com" aria-label="Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://leetcode.com/u/Arpit1kumar/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="div-btn-banner">
-                        <a (click)='analyticsService.sendAnalyticEvent("click_send_mail", "banner", "email")' href="mailto:arpitkmar302@gmail.com" target="_black" class="main-btn">
+                        <a (click)='analyticsService.sendAnalyticEvent("click_send_mail", "banner", "email")' href="mailto:arpitkmar302@gmail.com" class="main-btn">
                             {{"Banner.ActionBtn" | translate}}
+                        </a>
+                        <a (click)='analyticsService.sendAnalyticEvent("download_cv", "banner", "resume")' href="assets/cv/Arpit_Kumar_Resume.pdf" download="Arpit_Kumar_Resume.pdf" class="main-btn btn-outline">
+                            Download resume
                         </a>
                     </div>
                 </div>
