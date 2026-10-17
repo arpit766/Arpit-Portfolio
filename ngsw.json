@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1792259549911,
+  "timestamp": 1792259864716,
   "index": "/Arpit-Portfolio/index.html",
   "assetGroups": [
     {
@@ -13,12 +13,24 @@
       "urls": [
         "/Arpit-Portfolio/favicon.ico",
         "/Arpit-Portfolio/index.html",
-        "/Arpit-Portfolio/main.2c744ce88abbb9cf.js",
+        "/Arpit-Portfolio/main.dc43fe85effaa6df.js",
         "/Arpit-Portfolio/manifest.webmanifest",
         "/Arpit-Portfolio/polyfills.62fac8a24508365f.js",
         "/Arpit-Portfolio/runtime.818016794b4d4a60.js",
         "/Arpit-Portfolio/scripts.8c844e0f4a27dcd1.js",
         "/Arpit-Portfolio/styles.2424e071bf0fcfd4.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "i18n",
+      "installMode": "lazy",
+      "updateMode": "freshness",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/Arpit-Portfolio/assets/i18n/en.json"
       ],
       "patterns": []
     },
@@ -104,7 +116,6 @@
         "/Arpit-Portfolio/assets/fonts/SFMono/SFMono-SemiboldItalic.woff",
         "/Arpit-Portfolio/assets/fonts/SFMono/SFMono-SemiboldItalic.woff2",
         "/Arpit-Portfolio/assets/fonts/SFMono/stylesheet.css",
-        "/Arpit-Portfolio/assets/i18n/en.json",
         "/Arpit-Portfolio/assets/images/1.png",
         "/Arpit-Portfolio/assets/images/10.png",
         "/Arpit-Portfolio/assets/images/11.png",
@@ -292,8 +303,8 @@
     "/Arpit-Portfolio/fa-solid-900.d5b0a3566b352ee9.ttf": "eb8914f6b1797b45ee0883e6089d92695d9f9441",
     "/Arpit-Portfolio/fa-solid-900.e67670b0779338ff.woff": "a22acd7697f36e7d4cc31a853c70e776eac54bb1",
     "/Arpit-Portfolio/favicon.ico": "97c827d7b24e8fa8795e691c55f62129e3c29f6d",
-    "/Arpit-Portfolio/index.html": "0af07650af531e93d1b314cb9d0efc7c4a43962f",
-    "/Arpit-Portfolio/main.2c744ce88abbb9cf.js": "969335ab7ce8194461276d473c56e947b1093e3c",
+    "/Arpit-Portfolio/index.html": "4e42991f7cbc7665e73242c49482c42ff6c70e47",
+    "/Arpit-Portfolio/main.dc43fe85effaa6df.js": "c06dcf3ec469137635ee8b0f0892c54b2c95b900",
     "/Arpit-Portfolio/manifest.webmanifest": "9baa151d44f31193283ded7acfc55c431e33b5f5",
     "/Arpit-Portfolio/owl.video.play.e3b436436832b027.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",
     "/Arpit-Portfolio/polyfills.62fac8a24508365f.js": "18e31a57a96db8767e224c1fac5bb125e8255929",
