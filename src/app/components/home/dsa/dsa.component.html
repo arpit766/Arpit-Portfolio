@@ -1,0 +1,24 @@
+<section class="section dsa" id="dsa">
+  <div class="container">
+    <div class="section-box">
+      <div class="about-title mb-5" data-aos="fade-up">
+        <h3 class="section-title">
+          <span class="n-section-title">08.</span> {{ 'DSA.Title' | translate }}
+        </h3>
+      </div>
+      <div class="dsa-grid" data-aos="fade-up">
+        <div *ngFor="let stat of 'DSA.Stats' | translate" class="dsa-card">
+          <p class="dsa-value">{{ stat.value }}</p>
+          <p class="dsa-label">{{ stat.label }}</p>
+        </div>
+      </div>
+      <ul class="dsa-links" data-aos="fade-up">
+        <li *ngFor="let link of 'DSA.Links' | translate">
+          <a [href]="link.url" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-external-link-alt"></i> {{ link.label }}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

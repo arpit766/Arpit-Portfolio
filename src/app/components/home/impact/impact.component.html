@@ -1,0 +1,25 @@
+<section class="section impact" id="impact">
+  <div class="container">
+    <div class="section-box">
+      <div class="about-title mb-5" data-aos="fade-up" data-aos-duration="1000">
+        <h3 class="e-font section-title">
+          <span class="code-font n-section-title">02.</span>
+          {{ 'Impact.Title' | translate }}
+        </h3>
+      </div>
+      <p class="section-lead" data-aos="fade-up">{{ 'Impact.Subtitle' | translate }}</p>
+      <div class="impact-grid">
+        <article
+          *ngFor="let metric of 'Impact.Metrics' | translate; let i = index"
+          class="impact-card"
+          data-aos="fade-up"
+          [attr.data-aos-delay]="i * 80"
+        >
+          <p class="impact-value">{{ metric.value }}</p>
+          <h4 class="impact-label">{{ metric.label }}</h4>
+          <p class="impact-context">{{ metric.context }}</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
